@@ -133,7 +133,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/Users/raulgutierrez/Projects/altametrics-test/server/server/generated/prisma",
+      "value": "/Users/raulgutierrez/Projects/altametrics-test/server/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -151,9 +151,9 @@ const config = {
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../../../.env"
+    "rootEnvPath": null
   },
-  "relativePath": "../../../prisma",
+  "relativePath": "../../prisma",
   "clientVersion": "6.6.0",
   "engineVersion": "f676762280b54cd07c770017ed3711ddde35f37a",
   "datasourceNames": [
@@ -169,8 +169,8 @@ const config = {
       }
     }
   },
-  "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\ngenerator client {\n  provider = \"prisma-client-js\"\n  output   = \"../server/generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel User {\n  id       Int    @id @default(autoincrement())\n  email    String\n  password String\n  name     String\n}\n\nmodel Invoice {\n  id          Int      @id @default(autoincrement())\n  vendor_name String\n  amount      Int\n  due_date    DateTime\n  description String\n  user_id     Int\n  paid        Boolean\n}\n",
-  "inlineSchemaHash": "135d1f33d8c832954a99d519ad9f480a6f420cad1f7a8aa8d0bf38fe664f85e2",
+  "inlineSchema": "// This is your Prisma schema file,\n// learn more about it in the docs: https://pris.ly/d/prisma-schema\n\ngenerator client {\n  provider = \"prisma-client-js\"\n  output   = \"../generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel User {\n  id       Int    @id @default(autoincrement())\n  email    String\n  password String\n  name     String\n}\n\nmodel Invoice {\n  id          Int      @id @default(autoincrement())\n  vendor_name String\n  amount      Int\n  due_date    DateTime\n  description String\n  user_id     Int\n  paid        Boolean\n}\n",
+  "inlineSchemaHash": "b4ad507d174062b4b8e65bd96191fd71d741f68d1e4729b1ba380136986575e8",
   "copyEngine": true
 }
 
@@ -179,8 +179,8 @@ const fs = require('fs')
 config.dirname = __dirname
 if (!fs.existsSync(path.join(__dirname, 'schema.prisma'))) {
   const alternativePaths = [
-    "server/generated/prisma",
     "generated/prisma",
+    "prisma",
   ]
   
   const alternativePath = alternativePaths.find((altPath) => {
@@ -210,7 +210,7 @@ Object.assign(exports, Prisma)
 
 // file annotations for bundling tools to include these files
 path.join(__dirname, "libquery_engine-darwin-arm64.dylib.node");
-path.join(process.cwd(), "server/generated/prisma/libquery_engine-darwin-arm64.dylib.node")
+path.join(process.cwd(), "generated/prisma/libquery_engine-darwin-arm64.dylib.node")
 // file annotations for bundling tools to include these files
 path.join(__dirname, "schema.prisma");
-path.join(process.cwd(), "server/generated/prisma/schema.prisma")
+path.join(process.cwd(), "generated/prisma/schema.prisma")

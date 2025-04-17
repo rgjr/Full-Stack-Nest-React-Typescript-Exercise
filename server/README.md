@@ -22,8 +22,6 @@ Seed Prisma data inside `/server`
 npx prisma db seed
 ```
 
-## Frontend
-
 ## Usage
 
 This project comes installed with [Swagger](https://swagger.io/)
