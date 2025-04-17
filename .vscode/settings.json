@@ -1,0 +1,33 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#FF4081",
+    "list.activeSelectionForeground": "#FF4081",
+    "list.inactiveSelectionForeground": "#FF4081",
+    "list.highlightForeground": "#FF4081",
+    "scrollbarSlider.activeBackground": "#FF408150",
+    "editorSuggestWidget.highlightForeground": "#FF4081",
+    "textLink.foreground": "#FF4081",
+    "progressBar.background": "#FF4081",
+    "pickerGroup.foreground": "#FF4081",
+    "tab.activeBorder": "#FF4081",
+    "notificationLink.foreground": "#FF4081",
+    "editorWidget.resizeBorder": "#FF4081",
+    "editorWidget.border": "#FF4081",
+    "settings.modifiedItemIndicator": "#FF4081",
+    "settings.headerForeground": "#FF4081",
+    "panelTitle.activeBorder": "#FF4081",
+    "breadcrumb.activeSelectionForeground": "#FF4081",
+    "menu.selectionForeground": "#FF4081",
+    "menubar.selectionForeground": "#FF4081",
+    "editor.background": "#000000",
+    "diffEditor.removedLineBackground": "#ff000020",
+    "diffEditor.removedTextBackground": "#ff000060",
+    "diffEditorGutter.removedLineBackground": "#ff000040",
+    "diffEditor.insertedLineBackground": "#ffff0020",
+    "diffEditor.insertedTextBackground": "#ffff0040",
+    "diffEditorGutter.insertedLineBackground": "#ffff0040",
+    "activityBar.background": "#08360D",
+    "titleBar.activeBackground": "#0C4B13",
+    "titleBar.activeForeground": "#F3FDF4"
+  }
+}
