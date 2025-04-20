@@ -1,9 +1,13 @@
 import DisplayInvoices from './components/DisplayInvoices'
+import Sidebar from './components/Sidebar'
 import './App.css'
 
 function App() {
   return (
-    <DisplayInvoices />
+    <div>
+      <Sidebar />
+      <DisplayInvoices />
+    </div>
   )
 }
 
