@@ -7,3 +7,10 @@ export interface Invoice {
   user_id: number;
   paid: boolean;
 }
+
+export interface InvoiceState {
+  invoice: Invoice | null;
+  invoices: Invoice[];
+  status: 'idle' | 'pending' | 'succeeded' | 'failed';
+  error: string | null;
+}
