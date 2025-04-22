@@ -24,11 +24,23 @@ npx prisma db seed
 
 ## Frontend
 
+Use npm to install
+
+```bash
+npm install
+```
+
+Run project
+
+```bash
+npm run dev
+```
+
 ## Usage
 
 This project comes installed with [Swagger](https://swagger.io/)
 
-- visit [http://localhost:3000/api/](localhost:3000/api/) after running to view endpoints
+- visit [http://localhost:3000/api/](http://localhost:3000/api/) after running to view endpoints
 
 ## License
 
