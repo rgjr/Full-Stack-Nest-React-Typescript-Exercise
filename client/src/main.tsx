@@ -6,6 +6,7 @@ import { store } from './app/store'
 import { Provider } from 'react-redux'
 import { QueryClient, QueryClientProvider } from 'react-query'
 
+
 // Create a client
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

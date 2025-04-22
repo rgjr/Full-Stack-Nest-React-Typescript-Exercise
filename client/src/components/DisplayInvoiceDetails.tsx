@@ -1,10 +1,7 @@
-import axios from 'axios'
-import { useQuery } from 'react-query'
+// import React, { useEffect } from 'react'
+// import axios from 'axios'
+// import { useQuery } from 'react-query'
+// import { fetchInvoices, selectAllInvoices, selectInvoicesStatus } from '../features/invoice/invoiceSlice'
+// import { useAppSelector, useAppDispatch } from '../app/hooks'
 
-// Define a function to fetch invoices from the API
-const retrieveSingleInvoice = async (id: string) => {
-  const { data } = await axios.get(`http://localhost:3000/invoices/${id}`)
-  return data
-}
-
-export default retrieveSingleInvoice
+// export default retrieveSingleInvoice
