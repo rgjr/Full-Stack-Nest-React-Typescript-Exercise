@@ -1,5 +1,6 @@
 import DisplayInvoices from './components/DisplayInvoices'
 import Sidebar from './components/Sidebar'
+import Login from './components/Login';
 import './App.css'
 import {
   createBrowserRouter,
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/login',
-    element: <div>Login</div>,
+    element: <Login />,
   },
   {
     path: '/invoices',

@@ -6,19 +6,8 @@ import { fetchInvoices, selectAllInvoices, selectInvoicesStatus } from '../featu
 import { useAppSelector, useAppDispatch } from '../app/hooks'
 import ModalComponent from './Modal'
 
-// Define a function to fetch invoices from the API
-// const retrieveInvoices = async () => {
-//   const { data } = await axios.get('http://localhost:3000/invoices')
-//   return data
-// }
-
 // Define a functional component to display invoices
 const DisplayInvoices = () => {
-  // const {
-  //   data: invoices,
-  //   error,
-  //   isLoading,
-  // } = useQuery('invoicesData', retrieveInvoices)
 
   // Use the useAppDispatch hook to dispatch actions to the Redux store
   // and fetch invoices when the component mounts

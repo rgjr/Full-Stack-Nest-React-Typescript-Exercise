@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { invoiceReducer } from '../features/invoice/invoiceSlice';
+import { authReducer } from '../features/auth/authSlice';
 
 // Create a Redux store with the invoice reducer
 export const store = configureStore({
   reducer: {
-    invoice: invoiceReducer
+    invoice: invoiceReducer,
+    auth: authReducer
   }
 });
 
